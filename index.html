@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Giovanni Trenta — AI-Driven Lead Mobile Developer & Software Architect</title>
+  <meta name="description" content="Sito ufficiale e portfolio di Giovanni Trenta. Oltre 25 anni di ingegneria software: architetture enterprise, Mobile Architect (Kotlin, Flutter, Swift, macOS) e sviluppo accelerato da Intelligenza Artificiale.">
+  <meta name="keywords" content="Giovanni Trenta, Mobile Architect, Android Developer, Flutter, Swift, macOS, Klipzen, CleanMacJoe, JoeNote, SleepRec, AI Developer, Roma, joemockdao">
+  <meta name="author" content="Giovanni Trenta">
+  <link rel="canonical" href="https://giovanni.trenta.it/">
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://giovanni.trenta.it/">
+  <meta property="og:title" content="Giovanni Trenta — AI-Driven Lead Mobile Developer & Software Architect">
+  <meta property="og:description" content="25+ anni di esperienza nell'ingegneria software. Dai grandi sistemi enterprise (Java/J2EE) allo sviluppo mobile d'eccellenza (Android, Flutter, iOS, macOS) con integrazione AI nativa.">
+  <meta property="og:image" content="https://giovanni.trenta.it/assets/photo_thumb.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%236366F1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-weight='800' font-size='50' fill='white'>GT</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Effects -->
+  <div class="bg-ambient-glow" aria-hidden="true">
+    <div class="glow-orb-1"></div>
+    <div class="glow-orb-2"></div>
+    <div class="glow-orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="container navbar">
+      <a href="#hero" class="nav-brand">
+        <img src="assets/photo_thumb.webp" alt="Giovanni Trenta" class="brand-avatar" width="38" height="38">
+        <span>Giovanni Trenta</span>
+        <span class="brand-badge">Lead Mobile &amp; Architect</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#chi-sono" class="nav-link">Chi Sono</a></li>
+        <li><a href="#progetti" class="nav-link">Progetti</a></li>
+        <li><a href="#ai-workflow" class="nav-link">AI Strategy</a></li>
+        <li><a href="#esperienze" class="nav-link">Esperienze</a></li>
+        <li><a href="#competenze" class="nav-link">Competenze</a></li>
+        <li><a href="#contatti" class="nav-link">Contatti</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Cambia tema">
+          <!-- Icon injected by JS -->
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle></svg>
+        </button>
+
+        <a href="assets/Giovanni_Trenta_CV.pdf" target="_blank" class="btn btn-primary btn-sm" download>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          <span>Scarica CV</span>
+        </a>
+
+        <button id="mobile-menu-btn" class="mobile-menu-toggle" aria-label="Apri menu di navigazione" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Disponibile per progetti di consulenza, architettura e sviluppo mobile</span>
+          </div>
+
+          <div class="hero-greeting">Software Engineer &amp; Mobile Architect</div>
+
+          <h1 class="hero-title">
+            Giovanni <span class="gradient-text">Trenta</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            AI-Driven Lead Mobile Developer &amp; Enterprise Architect
+          </h2>
+
+          <p class="hero-desc">
+            Oltre <strong>25 anni di ingegneria software</strong>: dalle solide architetture enterprise Java/J2EE per banche e pubblica amministrazione ad oltre un decennio di leadership nello sviluppo mobile nativo e cross-platform (<strong>Android, Flutter, iOS, macOS</strong>). Integro flussi di lavoro AI per velocizzare i cicli di rilascio e garantire soluzioni scalabili e performanti.
+          </p>
+
+          <div class="hero-ai-callout">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            <div><strong>Metodologia AI-Augmented:</strong> Claude Code (Architettura) • Gemini (UI &amp; Logic) • Cursor (Continuous Review) • Custom AI Skills</div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#progetti" class="btn btn-primary">
+              <span>Esplora i Miei Progetti</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#contatti" class="btn btn-secondary">
+              <span>Mettiti in Contatto</span>
+            </a>
+
+            <div class="hero-social-pills">
+              <a href="https://github.com/joemockdao" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Profilo GitHub joemockdao">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+              <a href="https://www.linkedin.com/in/giovanni-trenta-969850ba/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Profilo LinkedIn di Giovanni Trenta">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.92 0 1.67-.75 1.67-1.67s-.75-1.67-1.67-1.67c-.92 0-1.67.75-1.67 1.67s.75 1.67 1.67 1.67m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+              </a>
+              <a href="mailto:giovanni.trenta78@gmail.com" class="social-icon-btn" aria-label="Invia una email a Giovanni Trenta">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow-ring"></div>
+            <div class="avatar-img-container">
+              <img src="assets/photo_thumb.webp" alt="Ritratto professionale di Giovanni Trenta" class="avatar-img" width="320" height="320" fetchpriority="high">
+            </div>
+
+            <div class="floating-badge badge-top-right">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#22D3EE"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.07 1.72-.94 2.74 1 .08 2.03-.49 2.65-1.24z"/></svg>
+              <span>macOS &amp; iOS Specialist</span>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#6366F1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              <span>25+ Anni Ingegneria IT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Metrics Highlights -->
+    <section class="metrics-section" aria-label="Statistiche e indicatori chiave">
+      <div class="container">
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number">25+</div>
+            <div class="metric-label">Anni nell'Ingegneria Software</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">4+</div>
+            <div class="metric-label">App Pubblicate (macOS &amp; App Store)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">Enterprise</div>
+            <div class="metric-label">Clienti Banking, PA &amp; Telco (BNL, Poste)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">100%</div>
+            <div class="metric-label">AI-Augmented Development Workflow</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="chi-sono" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Profilo Professionale</span>
+          <h2 class="section-title">Solide Radici Enterprise, Visione Mobile &amp; AI</h2>
+          <p class="section-description">
+            Un percorso completo iniziato nel 2000 con la progettazione di sistemi backend J2EE e proseguito per oltre una decade come Mobile Architect per banche, startup e grandi realtà industriali.
+          </p>
+        </div>
+
+        <div class="contact-card-main" style="padding: 36px 42px;">
+          <div style="font-size: 1.05rem; line-height: 1.8; color: var(--text-secondary);">
+            <p style="margin-bottom: 18px;">
+              Mi chiamo <strong>Giovanni Trenta</strong>. Da oltre 25 anni sviluppo software con un unico obiettivo: creare soluzioni affidabili, performanti e piacevoli da utilizzare. La mia carriera si è formata sui grandi sistemi enterprise Java/J2EE per enti governativi e istituzioni (Camera dei Deputati, Telecom Italia, INAIL, Ancitel), per poi evolvere verso il mondo mobile nativo e cross-platform, dove ho ricoperto ruoli da <strong>Mobile Architect</strong> e <strong>Tech Lead</strong> per brand quali <em>BNL (Gruppo BNP Paribas)</em>, <em>Octo Telematics</em>, <em>Poste Italiane</em> e startup innovative come <em>Insoore</em>.
+            </p>
+            <p style="margin-bottom: 18px;">
+              Oggi applico costantemente la metodologia <strong>AI-Augmented Engineering</strong>: impiego agenti intelligenti (Claude Code, Gemini, Cursor) nella fase di analisi, progettazione architetturale, review e refactoring, moltiplicando la qualità e la velocità di delivery. Oltre al lavoro enterprise, creo e mantengo applicazioni desktop e mobile pubblicate con successo su Apple App Store e disponibili come progetti open-source su GitHub.
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px;">
+              <span class="tag-badge">📍 Roma, Italia</span>
+              <span class="tag-badge">💼 Mobile Architect &amp; Senior Lead</span>
+              <span class="tag-badge">🚀 Creatore di Klipzen, CleanMacJoe, JoeNote &amp; SleepRec</span>
+              <span class="tag-badge tag-ai">🤖 AI-Augmented Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="progetti" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Portfolio Progetti</span>
+          <h2 class="section-title">Applicazioni, Utility &amp; Soluzioni Enterprise</h2>
+          <p class="section-description">
+            Una selezione di progetti creati da zero, rilasciati sui marketplace ufficiali o sviluppati per grandi committenti enterprise.
+          </p>
+        </div>
+
+        <div class="projects-filter-bar" role="tablist" aria-label="Filtro progetti">
+          <button class="filter-btn active" data-filter="all">Tutti i Progetti</button>
+          <button class="filter-btn" data-filter="macos-ios">macOS &amp; iOS</button>
+          <button class="filter-btn" data-filter="enterprise">Enterprise &amp; Android</button>
+          <button class="filter-btn" data-filter="ai-opensource">Open Source &amp; AI</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Klipzen -->
+          <article class="project-card" data-category="macos-ios ai-opensource">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+              </div>
+              <span class="project-badge-pill">macOS Nativo • Free</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Klipzen</h3>
+              <div class="project-tagline">Native macOS Video Editor (CapCut / iMovie Alternative)</div>
+              <p class="project-desc">
+                Video editor leggero e performante scritto nativamente per macOS in Swift e SwiftUI. Permette di tagliare video, applicare filtri, generare sottotitoli automatici con time ruler di precisione ed esportare nei formati ottimali per TikTok, Instagram Reels e YouTube.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">Swift</span>
+                <span class="tag-badge">SwiftUI</span>
+                <span class="tag-badge">AVFoundation</span>
+                <span class="tag-badge">Metal</span>
+                <span class="tag-badge">AppKit</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/joemockdao/Klipzen" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Repository GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2: CleanMacJoe -->
+          <article class="project-card" data-category="macos-ios ai-opensource">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"></path><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+              </div>
+              <span class="project-badge-pill">macOS Utility • Native</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">CleanMacJoe</h3>
+              <div class="project-tagline">Disk Cleaner &amp; App Uninstaller Utility</div>
+              <p class="project-desc">
+                Utility nativa per macOS che permette di ripulire file temporanei, cache orfane e disinstallare applicazioni in modo completo senza lasciare residui nel file system. Interfaccia moderna con supporto Dark Mode integrato e basso consumo di risorse.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">Swift</span>
+                <span class="tag-badge">SwiftUI</span>
+                <span class="tag-badge">macOS APIs</span>
+                <span class="tag-badge">Disk Analysis</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://github.com/joemockdao/CleanMacJoe" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                <span>Repository GitHub</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: JoeNote -->
+          <article class="project-card" data-category="macos-ios">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+              </div>
+              <span class="project-badge-pill project-badge-appstore">App Store • iOS</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">JoeNote</h3>
+              <div class="project-tagline">Minimalist Quick Note-Taking App</div>
+              <p class="project-desc">
+                App per iOS rapida ed essenziale per catturare all'istante idee, appunti di lavoro, checklist e promemoria senza interruzioni. Disegnata per massimizzare la concentrazione e l'efficienza quotidiana.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">iOS</span>
+                <span class="tag-badge">Swift</span>
+                <span class="tag-badge">Apple App Store</span>
+                <span class="tag-badge">Productivity</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://apps.apple.com/it/app/joenote/id6738133424" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.07 1.72-.94 2.74 1 .08 2.03-.49 2.65-1.24z"/></svg>
+                <span>Vedi su App Store</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: SleepRec -->
+          <article class="project-card" data-category="macos-ios">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+              </div>
+              <span class="project-badge-pill project-badge-appstore">App Store • iOS</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">SleepRec</h3>
+              <div class="project-tagline">Sleep Quality Monitor &amp; Audio Analytics</div>
+              <p class="project-desc">
+                Applicazione iOS per monitorare la qualità del sonno con analisi acustica notturna, rilevamento rumori e report statistici per comprendere e ottimizzare il proprio riposo notturno.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">iOS</span>
+                <span class="tag-badge">Audio Processing</span>
+                <span class="tag-badge">Health Analytics</span>
+                <span class="tag-badge">App Store</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="https://apps.apple.com/it/app/sleeprec/id1528754113" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.07 1.72-.94 2.74 1 .08 2.03-.49 2.65-1.24z"/></svg>
+                <span>Vedi su App Store</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 5: Enterprise Mobile Banking & IoT -->
+          <article class="project-card" data-category="enterprise">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+              </div>
+              <span class="project-badge-pill project-badge-enterprise">Enterprise • Banking &amp; IoT</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Enterprise Mobile Solutions</h3>
+              <div class="project-tagline">Lead Architecture for BNL, Octo Telematics &amp; Poste</div>
+              <p class="project-desc">
+                Architettura e guida tecnica per app mobile mission-critical in ambito banking e telematica IoT: riscrittura completa in Kotlin nativo con Android Jetpack, sviluppo cross-platform con Flutter (BLoC, Riverpod), gestione rigorosa della crittografia e conformità con gli standard di sicurezza bancaria.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">Kotlin</span>
+                <span class="tag-badge">Android Jetpack</span>
+                <span class="tag-badge">Flutter</span>
+                <span class="tag-badge">BLoC / Riverpod</span>
+                <span class="tag-badge">Banking Security</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="#esperienze" class="btn btn-secondary btn-sm">
+                <span>Dettagli Ruolo Digitouch</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 6: Insoore Inspection Platform -->
+          <article class="project-card" data-category="enterprise">
+            <div class="project-card-header">
+              <div class="project-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+              </div>
+              <span class="project-badge-pill">Startup • Insurtech</span>
+            </div>
+            <div class="project-card-body">
+              <h3 class="project-title">Insoore Vehicle Inspection</h3>
+              <div class="project-tagline">Remote Inspection &amp; Real-time Video Stream</div>
+              <p class="project-desc">
+                App Android per perizie e ispezioni veicolari con acquisizione fotografica controllata, certificazione dei metadati, tracciamento GPS anti-frode e videochiamate bidirezionali in tempo reale tramite Twilio e Bandyer. Architettura MVVM con Retrofit, Glide e migrazione nativa a Kotlin.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">Android</span>
+                <span class="tag-badge">Kotlin</span>
+                <span class="tag-badge">WebRTC / Twilio</span>
+                <span class="tag-badge">Google Maps</span>
+                <span class="tag-badge">MVVM</span>
+              </div>
+            </div>
+            <div class="project-card-footer">
+              <a href="#esperienze" class="btn btn-secondary btn-sm">
+                <span>Dettagli Esperienza Insoore</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Strategy & Architecture Section -->
+    <section id="ai-workflow" class="ai-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">AI-Augmented Engineering</span>
+          <h2 class="section-title">Come l'AI Potenzia il Mio Processo di Sviluppo</h2>
+          <p class="section-description">
+            L'Intelligenza Artificiale non sostituisce l'esperienza ingegneristica: la amplifica. Integro modelli e agenti avanzati in ogni fase del ciclo di vita del software.
+          </p>
+        </div>
+
+        <div class="ai-workflow-grid">
+          <div class="ai-step-card">
+            <div class="ai-step-number">01 / ARCHITETTURA</div>
+            <h3 class="ai-step-title">Claude Code</h3>
+            <p class="ai-step-desc">
+              Analisi profonda di sistemi estesi, refactoring architetturale di classi complesse, verifica di pattern (MVVM, Clean Architecture, BLoC) e generazione di documentazione tecnica ad alta coerenza.
+            </p>
+          </div>
+
+          <div class="ai-step-card">
+            <div class="ai-step-number">02 / UI &amp; PROTOTYPING</div>
+            <h3 class="ai-step-title">Gemini</h3>
+            <p class="ai-step-desc">
+              Generazione rapida di componenti visivi, interfacce utente reattive e analisi multimodale per verificare layout, accessibilità e corrispondenza alle linee guida Apple HIG e Android Material 3.
+            </p>
+          </div>
+
+          <div class="ai-step-card">
+            <div class="ai-step-number">03 / CONTINUOUS CODING</div>
+            <h3 class="ai-step-title">Cursor &amp; Codex</h3>
+            <p class="ai-step-desc">
+              Pair programming contestuale a livello di intero workspace, generazione immediata di test unitari, individuazione tempestiva di edge case e refactoring reattivo in tempo reale durante la scrittura.
+            </p>
+          </div>
+
+          <div class="ai-step-card">
+            <div class="ai-step-number">04 / AUTOMATION</div>
+            <h3 class="ai-step-title">Custom Agentic Skills</h3>
+            <p class="ai-step-desc">
+              Creazione di skill su misura e automazioni agentiche per gestire build, pipeline di rilascio, auditing di sicurezza e sincronizzazione delle modifiche sui repository GitHub.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Timeline Section -->
+    <section id="esperienze" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Percorso Professionale</span>
+          <h2 class="section-title">Esperienza Lavorativa</h2>
+          <p class="section-description">
+            Oltre due decenni di impegno sul campo: dai progetti enterprise della Pubblica Amministrazione e telecomunicazioni fino alla direzione architetturale mobile.
+          </p>
+        </div>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <!-- Exp 1 -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <h3 class="timeline-role">Mobile Architect</h3>
+                <span class="timeline-period">2020 – Presente</span>
+              </div>
+              <div class="timeline-company">Digitouch — Roma</div>
+              <p class="timeline-text">
+                Lead tecnico mobile su commesse enterprise per clienti di massimo rilievo: <strong>BNL (Banca Nazionale del Lavoro)</strong>, <strong>Octo Telematics</strong> e <strong>Poste Italiane</strong>. Design e sviluppo di applicazioni banking native Android con Jetpack components, migrazione strategica interamente in Kotlin, e realizzazione di app Flutter con gestione dello stato avanzata (BLoC, Riverpod), SQLite, calendarizzazione e notifiche push. Integrazione di strumenti AI in produzione e applicazione metodologie Agile Scrum.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">Android</span>
+                <span class="tag-badge">Kotlin</span>
+                <span class="tag-badge">Jetpack Compose</span>
+                <span class="tag-badge">Flutter</span>
+                <span class="tag-badge">BLoC / Riverpod</span>
+                <span class="tag-badge tag-ai">AI: Claude Code &amp; Gemini</span>
+                <span class="tag-badge">Scrum Master / Lead</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 2 -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <h3 class="timeline-role">Android Developer</h3>
+                <span class="timeline-period">2018 – 2020</span>
+              </div>
+              <div class="timeline-company">Insoore (Startup Insurtech) — Roma</div>
+              <p class="timeline-text">
+                Architettura e sviluppo completo dell'app Android per la perizia e ispezione dei veicoli assicurati. Pattern MVVM, networking reattivo con Retrofit, CameraView personalizzata per l'acquisizione verificata delle foto, Glide per l'elaborazione delle immagini, Google Maps per geolocalizzazione anti-frode e videochiamate con Twilio e Bandyer. Completa reingegnerizzazione del codice in Kotlin moderno.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">Android</span>
+                <span class="tag-badge">Kotlin</span>
+                <span class="tag-badge">MVVM</span>
+                <span class="tag-badge">Retrofit</span>
+                <span class="tag-badge">Firebase</span>
+                <span class="tag-badge">Twilio / Bandyer</span>
+                <span class="tag-badge">Google Maps API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 3 -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <h3 class="timeline-role">Senior Mobile Developer</h3>
+                <span class="timeline-period">2014 – 2018</span>
+              </div>
+              <div class="timeline-company">Consulenze IT Enterprise — Roma</div>
+              <p class="timeline-text">
+                Consulenza e sviluppo applicativo mobile per grandi clienti enterprise, tra cui <strong>Enel</strong> e <strong>Telecom Italia</strong>. Realizzazione di app native per iOS (Swift) e Android (Java/Kotlin), affiancate dalle prime adozioni di framework cross-platform (Flutter), curando l'intero ciclo di pubblicazione su Apple App Store e Google Play Store.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">Android</span>
+                <span class="tag-badge">iOS (Swift)</span>
+                <span class="tag-badge">Flutter / Dart</span>
+                <span class="tag-badge">App Store &amp; Play Store</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Exp 4 -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <h3 class="timeline-role">Senior Java Developer / Tech Lead</h3>
+                <span class="timeline-period">2000 – 2014</span>
+              </div>
+              <div class="timeline-company">Enterprise IT &amp; Pubblica Amministrazione — Roma</div>
+              <p class="timeline-text">
+                14 anni di ingegneria software enterprise per grandi committenti nazionali: <strong>Telecom Italia</strong>, <strong>INAIL</strong>, <strong>Ancitel</strong> e la <strong>Camera dei Deputati</strong> (dove ho sviluppato il sistema software di conteggio dei dibattiti parlamentari con Spring MVC, AOP, Hibernate, EJB 3.0, Oracle e SQL Server). Ruoli di coordinamento tecnico, design di database relazionali e architetture distribuite mission-critical.
+              </p>
+              <div class="project-tags">
+                <span class="tag-badge">Java Enterprise (J2EE)</span>
+                <span class="tag-badge">Spring MVC</span>
+                <span class="tag-badge">Hibernate / EJB</span>
+                <span class="tag-badge">Oracle / SQL Server</span>
+                <span class="tag-badge">PA &amp; Telecomunicazioni</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline-item">
+            <div class="timeline-node" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-top">
+                <h3 class="timeline-role">Perito Informatico</h3>
+                <span class="timeline-period">Formazione Tecnica</span>
+              </div>
+              <div class="timeline-company">Istruzione Tecnica Superiore — Roma</div>
+              <p class="timeline-text">
+                Solide basi formative su algoritmi, strutture dati, linguaggi di programmazione, reti di telecomunicazione e gestione dei database, arricchite da 25 anni di formazione continua e adozione pionieristica delle tecnologie emergenti.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="competenze" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competenze Tecniche</span>
+          <h2 class="section-title">Tech Stack &amp; Specializzazioni</h2>
+          <p class="section-description">
+            Un ventaglio di competenze maturate sul campo, che spaziano dal mobile moderno ai sistemi backend enterprise e agli strumenti AI di ultima generazione.
+          </p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Category 1 -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="2"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+              <span>Mobile &amp; Cross-Platform</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Kotlin (Android)</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Android Jetpack &amp; Compose</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Flutter &amp; Dart</span><span>85%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Swift &amp; SwiftUI (macOS / iOS)</span><span>70%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 70%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              <span>Enterprise &amp; Backend</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Java / J2EE</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Spring MVC &amp; Hibernate</span><span>95%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Firebase &amp; Cloud Services</span><span>95%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Oracle, SQL Server, SQLite</span><span>90%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+              <span>AI-Driven Tooling</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Claude Code (Architecture)</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Gemini CLI &amp; UI Logic</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Cursor IDE &amp; Codex</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Prompt AI &amp; Custom Skills</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="skill-category-card">
+            <h3 class="skill-category-title">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              <span>Metodologie &amp; Delivery</span>
+            </h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-info"><span>Agile Scrum</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>App Store &amp; Play Store Release</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>GitFlow &amp; CI/CD Pipelines</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info"><span>Architettura Software &amp; Pattern</span><span>100%</span></div>
+                <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 100%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contatti" class="contact-section">
+      <div class="container">
+        <div class="contact-card-main">
+          <div class="contact-grid">
+            <div class="contact-info-col">
+              <span class="section-tag">Contatti &amp; Opportunità</span>
+              <h3>Parliamo del Tuo Progetto</h3>
+              <p>
+                Sono aperto a progetti stimolanti, ruoli di <strong>Mobile Architect</strong>, consulenze strategiche su architetture Android/Flutter/macOS e integrazione di workflow AI per team di sviluppo.
+              </p>
+
+              <div class="contact-items-list">
+                <div class="contact-item-row">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="contact-item-detail">
+                    <span class="contact-item-label">Email Diretta</span>
+                    <a href="mailto:giovanni.trenta78@gmail.com" class="contact-item-value">giovanni.trenta78@gmail.com</a>
+                  </div>
+                </div>
+
+                <div class="contact-item-row">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                  </div>
+                  <div class="contact-item-detail">
+                    <span class="contact-item-label">Telefono / Mobile</span>
+                    <a href="tel:+393490716004" class="contact-item-value">+39 349 0716004</a>
+                  </div>
+                </div>
+
+                <div class="contact-item-row">
+                  <div class="contact-item-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                  </div>
+                  <div class="contact-item-detail">
+                    <span class="contact-item-label">Posizione</span>
+                    <span class="contact-item-value">Roma, Italia (Disponibile Full Remote / Ibrido)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-cta-col">
+              <h4 style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">Azione Rapida</h4>
+              <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6;">
+                Puoi scaricare il curriculum vitae aggiornato in formato PDF oppure copiare l'indirizzo email con un solo click.
+              </p>
+
+              <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
+                <button id="copy-email-btn" class="btn btn-secondary" style="width: 100%;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                  <span>Copia Email negli Appunti</span>
+                </button>
+
+                <a href="assets/Giovanni_Trenta_CV.pdf" target="_blank" download class="btn btn-primary" style="width: 100%;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Scarica Curriculum Vitae (PDF)</span>
+                </a>
+
+                <a href="https://www.linkedin.com/in/giovanni-trenta-969850ba/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.92 0 1.67-.75 1.67-1.67s-.75-1.67-1.67-1.67c-.92 0-1.67.75-1.67 1.67s.75 1.67 1.67 1.67m1.39 9.74v-8.37H5.07v8.37h2.78z"/></svg>
+                  <span>Connettiti su LinkedIn</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <p class="footer-copy">&copy; <span id="current-year">2026</span> Giovanni Trenta — Tutti i diritti riservati.</p>
+        <p class="footer-subcopy">Sito ospitato su GitHub Pages e reindirizzato al dominio <a href="https://giovanni.trenta.it">giovanni.trenta.it</a></p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="https://github.com/joemockdao" target="_blank" rel="noopener noreferrer">GitHub (@joemockdao)</a></li>
+        <li><a href="https://www.linkedin.com/in/giovanni-trenta-969850ba/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+        <li><a href="mailto:giovanni.trenta78@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Copy Toast Notification -->
+  <div id="copy-toast" class="copy-toast" role="status" aria-live="polite">
+    Email copiata negli appunti!
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
