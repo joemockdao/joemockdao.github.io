@@ -18,7 +18,6 @@ Official personal website and developer portfolio for **Giovanni Trenta** (Mobil
 - **Semantic HTML5**: Accessible structure, OpenGraph meta tags, SEO-friendly.
 - **Modern CSS3**: Glassmorphism (`backdrop-filter`), CSS variables, dynamic gradients, responsive with `clamp()` and CSS Grid.
 - **Vanilla JavaScript**: Zero external dependencies, ultra-fast loading (100 Lighthouse Performance), bilingual support (IT/EN) with detection and URL/localStorage sync, persistent Dark/Light theme switcher, interactive filters, scroll-spy, and copy-to-clipboard.
-- **Hosting**: GitHub Pages with CNAME custom domain (`giovannitrenta.it`).
 
 ---
 
