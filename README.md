@@ -1,16 +1,15 @@
 # Giovanni Trenta — Personal Portfolio & Website
 
-Official personal website and developer portfolio for **Giovanni Trenta** (AI-Driven Lead Mobile Developer & Software Architect), hosted on GitHub Pages and routed to [giovanni.trenta.it](https://giovanni.trenta.it).
+Official personal website and developer portfolio for **Giovanni Trenta** (Mobile Architect &amp; Software Engineer), hosted on GitHub Pages and routed to [giovannitrenta.it](https://giovannitrenta.it).
 
 ---
 
 ## 🚀 Progetti in Evidenza
 
+- **[SleepRec](https://apps.apple.com/it/app/sleeprec/id1528754113)**: Sleep Quality Monitor & Audio Analytics (Disponibile su [App Store](https://apps.apple.com/it/app/sleeprec/id1528754113) e [Google Play](https://play.google.com/store/apps/details?id=it.joe.sleeprec&pcampaignid=web_share))
+- **[JoeNote](https://apps.apple.com/it/app/joenote/id6738133424)**: Smart Notes, Reminders & Task App (Disponibile su [App Store](https://apps.apple.com/it/app/joenote/id6738133424) e [Google Play](https://play.google.com/store/apps/details?id=it.note.joeNote&pcampaignid=web_share))
 - **[Klipzen](https://github.com/joemockdao/Klipzen)**: Native macOS Video Editor (Swift, SwiftUI, AVFoundation)
 - **[CleanMacJoe](https://github.com/joemockdao/CleanMacJoe)**: Disk Cleaner & App Uninstaller Utility per macOS
-- **[JoeNote](https://apps.apple.com/it/app/joenote/id6738133424)**: Minimalist Notes app on Apple App Store
-- **[SleepRec](https://apps.apple.com/it/app/sleeprec/id1528754113)**: Sleep Quality Monitor on Apple App Store
-- **Enterprise Solutions**: Mobile banking & IoT architectures (BNL, Octo Telematics, Poste Italiane)
 
 ---
 
@@ -18,23 +17,27 @@ Official personal website and developer portfolio for **Giovanni Trenta** (AI-Dr
 
 - **HTML5 Semantico**: Struttura accessibile, OpenGraph meta tags, SEO-friendly.
 - **Modern CSS3**: Glassmorphism (`backdrop-filter`), CSS variables, gradienti dinamici, responsive con `clamp()` e CSS Grid.
-- **Vanilla JavaScript**: Zero dipendenze esterne, caricamento ultra-rapido (100 Lighthouse Performance), Dark/Light theme switcher persistente in `localStorage`, filtri interattivi, scroll-spy e copy-to-clipboard.
-- **Hosting**: GitHub Pages con CNAME custom domain (`giovanni.trenta.it`).
+- **Vanilla JavaScript**: Zero dipendenze esterne, caricamento ultra-rapido (100 Lighthouse Performance), supporto bilingue (IT/EN) con rilevamento e sincronizzazione URL/localStorage, Dark/Light theme switcher persistente, filtri interattivi, scroll-spy e copy-to-clipboard.
+- **Hosting**: GitHub Pages con CNAME custom domain (`giovannitrenta.it`).
 
 ---
 
-## 🌐 Configurazione Dominio DNS (giovanni.trenta.it)
+## 🌐 Configurazione Dominio DNS (giovannitrenta.it)
 
-Per puntare il dominio acquistato `giovanni.trenta.it` a questo spazio GitHub Pages:
+Per puntare il dominio registrato `giovannitrenta.it` a questo spazio GitHub Pages:
 
-1. Accedere al pannello DNS del registrar dove è gestito il dominio `trenta.it`.
-2. Aggiungere / modificare il record **CNAME**:
-   - **Host / Nome**: `giovanni` (o `giovanni.trenta.it` in base al provider)
+1. Accedere al pannello DNS di OVH per `giovannitrenta.it`.
+2. Impostare i record **A** per il dominio apex (`giovannitrenta.it`):
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+3. Aggiungere il record **CNAME** per il sottodominio `www`:
+   - **Host / Sottodominio**: `www`
    - **Tipo**: `CNAME`
-   - **Valore / Destinazione**: `joemockdao.github.io.`
-   - **TTL**: Automatico (o 3600)
-3. Il file `CNAME` è già presente nella radice di questo repository con il valore `giovanni.trenta.it`.
-4. Una volta propagati i DNS, GitHub Pages abiliterà automaticamente il certificato SSL/HTTPS via Let's Encrypt (opzione *Enforce HTTPS* nei Settings del repository).
+   - **Target**: `joemockdao.github.io.`
+4. Il file `CNAME` alla radice della repository contiene `giovannitrenta.it`.
+5. Una volta propagati i DNS, GitHub Pages abiliterà automaticamente il certificato SSL/HTTPS via Let's Encrypt (opzione *Enforce HTTPS* nei Settings del repository).
 
 ---
 
@@ -43,8 +46,8 @@ Per puntare il dominio acquistato `giovanni.trenta.it` a questo spazio GitHub Pa
 Per avviare un server locale:
 
 ```bash
-python3 -m http.server 8000
-# Apri http://localhost:8000 nel browser
+python3 -m http.server 8080
+# Apri http://localhost:8080 nel browser
 ```
 
 ---
