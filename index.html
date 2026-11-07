@@ -130,6 +130,9 @@
       <p class="section-index">01 / <span data-i18n="section_projects">Progetti</span></p>
       <h2 id="projects-title" data-i18n="projects_title">Progetti personali</h2>
       <p class="section-lead" data-i18n="projects_lead">Applicazioni che progetto, sviluppo e pubblico.</p>
+      <svg width="0" height="0" class="svg-sprite" aria-hidden="true"><symbol id="icon-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l1.9 5.6 5.6 1.9-5.6 1.9L12 17l-1.9-5.6-5.6-1.9 5.6-1.9zM19 15l.9 2.6 2.6.9-2.6.9L19 22l-.9-2.6-2.6-.9 2.6-.9z"/></symbol></svg>
+
+      <div class="project-group-head"><h3 data-i18n="group_mobile">App mobile</h3><span>iOS · Android · Wear OS</span></div>
       <div class="project-grid">
         <article class="project-card project-sleeprec">
           <div class="project-art project-icon-art"><span class="icon-frame"><img src="assets/projects/sleeprec-icon.webp" alt="Icona dell'app SleepRec" width="400" height="400" loading="lazy"></span></div>
@@ -149,22 +152,51 @@
             <div class="project-links"><a href="https://apps.apple.com/it/app/joenote/id6738133424" target="_blank" rel="noopener noreferrer">App Store ↗</a><a href="https://play.google.com/store/apps/details?id=it.note.joeNote&amp;pcampaignid=web_share" target="_blank" rel="noopener noreferrer">Google Play ↗</a></div>
           </div>
         </article>
+      </div>
+
+      <div class="project-group-head"><h3 data-i18n="group_mac">App per Mac</h3><span data-i18n="group_mac_sub">Native in SwiftUI · gratuite · notarizzate da Apple</span></div>
+
+      <div class="agent-banner">
+        <div class="agent-banner-copy">
+          <span class="agent-badge"><svg aria-hidden="true"><use href="#icon-spark"/></svg><span data-i18n="agent_badge">Novità · Modalità agente AI</span></span>
+          <h4 data-i18n="agent_title">Chiedilo al tuo agente AI, l’app lo fa davanti a te.</h4>
+          <p data-i18n="agent_desc">Klipzen, CleanMacJoe e ScreenShotJoe si collegano all’agente che usi già tramite MCP. Descrivi il risultato che vuoi e guardalo prendere forma nell’app, pronto da annullare o rifinire a mano.</p>
+          <ul class="agent-clients" aria-label="Agenti AI compatibili"><li>Claude Desktop</li><li>Claude Code</li><li>Codex</li><li>Cursor</li><li>OpenCode</li><li>Antigravity</li></ul>
+          <ul class="agent-trust"><li data-i18n="agent_trust1">Spenta di default</li><li data-i18n="agent_trust2">Solo connessioni locali</li><li data-i18n="agent_trust3">Chiave segreta</li><li data-i18n="agent_trust4">Decidi sempre tu</li></ul>
+        </div>
+        <div class="agent-chat" aria-label="Esempi di richieste">
+          <div class="chat-row"><img src="assets/projects/klipzen-icon.webp" alt="" width="40" height="40" loading="lazy"><div><q data-i18n="agent_ex_klipzen">Fai un reel di 30 secondi con sottotitoli animati</q><small><b>Klipzen</b> · <span data-i18n="agent_ex_klipzen_note">montaggio in diretta sulla timeline</span></small></div><span class="chat-live" aria-hidden="true"></span></div>
+          <div class="chat-row"><img src="assets/projects/cleanmacjoe-icon.webp" alt="" width="40" height="40" loading="lazy"><div><q data-i18n="agent_ex_cleanmacjoe">Libera 20 GB senza toccare i miei progetti</q><small><b>CleanMacJoe</b> · <span data-i18n="agent_ex_cleanmacjoe_note">nulla va nel Cestino senza la tua conferma</span></small></div><span class="chat-live" aria-hidden="true"></span></div>
+          <div class="chat-row"><img src="assets/projects/screenshotjoe-icon.webp" alt="" width="40" height="40" loading="lazy"><div><q data-i18n="agent_ex_screenshotjoe">Prepara gli screenshot dello store in 4 lingue</q><small><b>ScreenShotJoe</b> · <span data-i18n="agent_ex_screenshotjoe_note">ogni slide si aggiorna dal vivo</span></small></div><span class="chat-live" aria-hidden="true"></span></div>
+        </div>
+      </div>
+
+      <div class="project-grid project-grid-three">
+        <article class="project-card project-screenshotjoe">
+          <div class="project-art project-icon-art"><span class="agent-badge agent-badge-float"><svg aria-hidden="true"><use href="#icon-spark"/></svg>AI Agent</span><span class="new-badge" data-i18n="badge_new">Nuovo</span><span class="icon-frame"><img src="assets/projects/screenshotjoe-icon.webp" alt="Icona dell'app ScreenShotJoe" width="480" height="480" loading="lazy"></span></div>
+          <div class="project-content">
+            <div class="project-title-row"><h3>ScreenShotJoe</h3><a href="https://github.com/joemockdao/ScreenShotJoe" target="_blank" rel="noopener noreferrer" aria-label="Apri repository ScreenShotJoe">↗</a></div>
+            <p data-i18n="screenshotjoe_desc">Screenshot per App Store e Google Play: mockup, titoli, 12 lingue e tutte le misure richieste.</p>
+            <ul class="tag-list" aria-label="Tecnologie ScreenShotJoe"><li>macOS</li><li>SwiftUI</li><li>App Store</li></ul>
+            <div class="project-links"><a href="https://github.com/joemockdao/ScreenShotJoe/releases/latest" target="_blank" rel="noopener noreferrer">Download ↗</a><a href="https://github.com/joemockdao/ScreenShotJoe" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+          </div>
+        </article>
         <article class="project-card project-klipzen">
-          <div class="project-art project-icon-art"><span class="icon-frame"><img src="assets/projects/klipzen-icon.webp" alt="Icona dell'app Klipzen" width="480" height="480" loading="lazy"></span></div>
+          <div class="project-art project-icon-art"><span class="agent-badge agent-badge-float"><svg aria-hidden="true"><use href="#icon-spark"/></svg>AI Agent</span><span class="icon-frame"><img src="assets/projects/klipzen-icon.webp" alt="Icona dell'app Klipzen" width="480" height="480" loading="lazy"></span></div>
           <div class="project-content">
             <div class="project-title-row"><h3>Klipzen</h3><a href="https://github.com/joemockdao/Klipzen" target="_blank" rel="noopener noreferrer" aria-label="Apri repository Klipzen">↗</a></div>
             <p data-i18n="klipzen_desc">Montaggio video, filtri e sottotitoli automatici. Esportazione per social e YouTube.</p>
-            <ul class="tag-list" aria-label="Tecnologie Klipzen"><li>macOS</li><li>Swift</li><li>SwiftUI</li><li>AVFoundation</li></ul>
-            <div class="project-links"><a href="https://github.com/joemockdao/Klipzen" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            <ul class="tag-list" aria-label="Tecnologie Klipzen"><li>macOS</li><li>SwiftUI</li><li>AVFoundation</li></ul>
+            <div class="project-links"><a href="https://github.com/joemockdao/Klipzen/releases/latest" target="_blank" rel="noopener noreferrer">Download ↗</a><a href="https://github.com/joemockdao/Klipzen" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
           </div>
         </article>
         <article class="project-card project-cleanmacjoe">
-          <div class="project-art project-icon-art"><span class="icon-frame"><img src="assets/projects/cleanmacjoe-icon.webp" alt="Icona dell'app CleanMacJoe" width="480" height="480" loading="lazy"></span></div>
+          <div class="project-art project-icon-art"><span class="agent-badge agent-badge-float"><svg aria-hidden="true"><use href="#icon-spark"/></svg>AI Agent</span><span class="icon-frame"><img src="assets/projects/cleanmacjoe-icon.webp" alt="Icona dell'app CleanMacJoe" width="480" height="480" loading="lazy"></span></div>
           <div class="project-content">
             <div class="project-title-row"><h3>CleanMacJoe</h3><a href="https://github.com/joemockdao/CleanMacJoe" target="_blank" rel="noopener noreferrer" aria-label="Apri repository CleanMacJoe">↗</a></div>
-            <p data-i18n="cleanmacjoe_desc">Pulizia di cache e file temporanei. Disinstallazione completa delle applicazioni.</p>
-            <ul class="tag-list" aria-label="Tecnologie CleanMacJoe"><li>macOS</li><li data-i18n="native_utility">Utility nativa</li><li>Dark Mode</li></ul>
-            <div class="project-links"><a href="https://github.com/joemockdao/CleanMacJoe" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
+            <p data-i18n="cleanmacjoe_desc">Pulizia di cache, duplicati e file grandi. Disinstallazione completa delle app.</p>
+            <ul class="tag-list" aria-label="Tecnologie CleanMacJoe"><li>macOS</li><li data-i18n="native_utility">Utility nativa</li></ul>
+            <div class="project-links"><a href="https://github.com/joemockdao/CleanMacJoe/releases/latest" target="_blank" rel="noopener noreferrer">Download ↗</a><a href="https://github.com/joemockdao/CleanMacJoe" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
           </div>
         </article>
       </div>
